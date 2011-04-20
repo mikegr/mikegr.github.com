@@ -165,8 +165,9 @@ a#skype-link {
     background: url("/images/sprite.png") no-repeat scroll -9px -188px transparent;
 }
 a#facebook-link {
-	background: url("/images/facebook.jpg") no-repeat scroll -9px -188px transparent;
+    background: url("/images/facebook.jpg") no-repeat transparent;
 }
+
 
 .pagination {
     font-size: 1.2em;
