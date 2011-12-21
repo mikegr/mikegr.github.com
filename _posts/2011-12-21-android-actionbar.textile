@@ -11,9 +11,7 @@ h2. Logo
 
 You can either use an icon or a logo on the left side of the action bar. 
 
-bc.. 
-	<activity android:logo="@drawable/actionbar_logo"/>
-p. 
+<activity android:logo="@drawable/actionbar_logo"/>
 
 There is no good documentation how to design the logo. 
 I have not found a way to place the logo in the total left corner of the action bar. There is always some margin before with the background color of the action bar.
