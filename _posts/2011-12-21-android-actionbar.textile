@@ -19,22 +19,27 @@ I have not found a way to place the logo in the total left corner of the action 
 
 My guess is that the logo should be transparent and harmonize with the background color of the action bar.
 There is one "blog post":http://android-developers.blogspot.com/2011/04/customizing-action-bar.html about styling the action bar, but this post does not cover this topic.  
-There a "few examples":http://actionbar.posterous.com how the action bar can be look like, but none has logo the way I wanted.  
+There a "few examples":http://actionbar.posterous.com how the action bar can be look like, but none has a logo the way I wanted.  
 
 
 h2. Tabs
 
-There are 3 navigation modes. One mode is tab navigation. Actions in the action bar can be either always be shown, if there is enough room  and/or with text or never. On Honeycomb tablet especially in portrait modus (eg. Acer Icona A500 with Android 3.2), the space for tab navigation is not expanded if there are actions that are marked with "ifRoom". Instead of moving the icons to the overflow menu, the tabs are truncated. The tabs loose the space against any icons.Instead you have to scroll within the tabs to view all tabs. 
+There are 3 navigation modes. One mode is tab navigation. Actions in the action bar can be either always be shown, if there is enough room  and/or with text or never. On Honeycomb tablets especially in portrait modus (eg. Acer Icona A500 with Android 3.2), the space for tab navigation is not expanded if there are actions that are marked with "ifRoom". Instead of moving the icons to the overflow menu, the tabs are truncated. The tabs loose the space against any icons. Instead you have to scroll within the tabs to view all tabs. 
 
 !/images/actionbar_tabs_cut.png!
 
-On Ice Cream Sandwich the are at least folded, but I'm not sure if the use of space is perfect.
+On Ice Cream Sandwich the tabs are at least transformed to a dropdown list, but I'm not sure if the use of space is perfect.
 
 !/images/actionbar_tabs_list.png!
  
 
 h2. Actions without main bar
 
-If you have tabs and disable the logo, icon and title, the tabs move to the top of the screen and stretch to the whole width. On a smartphone with Ice Cream Sandwich and portrait modus action icon are always moved to the next line, even if there enough space to place a single icon in the same row.   
+If you have tabs and disable the logo, icon and title, the tabs move to the top of the screen and stretch to the whole width. On a smartphone with Ice Cream Sandwich and portrait modus action icons are always moved to the next line, even if there is enough space to place a single icon in the same row.   
 
 !/images/actionbar_newrow.png! 
+
+ActionBar styles:
+https://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/styles.xml
+https://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/themes.xml
+
