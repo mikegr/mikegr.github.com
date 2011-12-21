@@ -10,16 +10,15 @@ h2. Logo
 
 You can either use an icon or a logo on the left side of the action bar. 
 
-<activity android:logo="@drawable/actionbar_logo"/>
+bc. <activity android:logo="@drawable/actionbar_logo"/>
 
 There is no good documentation how to design the logo. 
-I have not found a way to place the logo in the total left corner of the action bar. There is always some margin before with the background color of the action bar.
+I have not found a way to place the logo in the total left corner of the action bar. There is always some margin before the logo with the background color of the action bar.
 
 !/images/actionbar_logo.png!
 
-My guess is that the logo should be transparent with background color of the action bar.
+My guess is that the logo should be transparent and harmonize with the background color of the action bar.
 There is one "blog post":http://android-developers.blogspot.com/2011/04/customizing-action-bar.html about styling the action bar, but this post does not cover this topic.  
-
 There a "few examples":http://actionbar.posterous.com how the action bar can be look like, but none has logo the way I wanted.  
 
 
@@ -36,7 +35,6 @@ On Ice Cream Sandwich the are at least folded, but I'm not sure if the use of sp
 
 h2. Actions without main bar
 
-If you have tabs and disable the logo, icon and title, the tabs move to the top of the screen and stretch to the whole width.
-On a smartphone with Ice Cream Sandwich and portrait modus action icon are always moved to the next line, even if there enough space to place a single icon in the same row.   
+If you have tabs and disable the logo, icon and title, the tabs move to the top of the screen and stretch to the whole width. On a smartphone with Ice Cream Sandwich and portrait modus action icon are always moved to the next line, even if there enough space to place a single icon in the same row.   
 
 !/images/actionbar_newrow.png! 
