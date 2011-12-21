@@ -4,8 +4,7 @@ title: Android Actionbar
 comments: true
 ---
 
-There are a few annoyances regarding the use of the ActionBar
-http://developer.android.com/guide/topics/ui/actionbar.html
+There are a few annoyances regarding the use of the "Action Bar":http://developer.android.com/guide/topics/ui/actionbar.html
 
 h2. Logo
 
