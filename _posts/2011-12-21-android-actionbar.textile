@@ -39,7 +39,10 @@ If you have tabs and disable the logo, icon and title, the tabs move to the top 
 
 !/images/actionbar_newrow.png! 
 
-ActionBar styles:
-https://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/styles.xml
-https://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/themes.xml
+h3. Further Links 
+
+The styles of the action bar can be seen on the mirror of the ASOP project on GitHub:
+"styles.xml":https://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/styles.xml
+"themes.xml":https://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/themes.xml
+
 
