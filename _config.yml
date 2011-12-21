@@ -12,7 +12,7 @@ paginate_files:
 
 permalink: /:year/:month/:day/:title
 
-markdown: rdiscount
+markdown: maruku
 pygments: true
 
 exclude:
