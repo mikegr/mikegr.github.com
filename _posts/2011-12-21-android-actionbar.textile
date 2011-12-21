@@ -25,21 +25,18 @@ There a "few examples":http://actionbar.posterous.com how the action bar can be 
 
 h2. Tabs
 
-There are 3 navigation modes. One mode is tab navigation. 
-Actions in the action bar can be ei	ther always be shown, if there is enough room  and/or with text or never.
-On Honeycomb tablet especially in portrait modus (eg Acer Icona A500 with Android 3.2), the space for tab navigation is not expanded if there are actions that are marked with "ifRoom". Instead of moving the icons to the overflow menu, the tabs are truncated. 
-The tabs loose the space against any icons.Instead you have to scroll within the tabs to view all tabs. 
+There are 3 navigation modes. One mode is tab navigation. Actions in the action bar can be either always be shown, if there is enough room  and/or with text or never. On Honeycomb tablet especially in portrait modus (eg. Acer Icona A500 with Android 3.2), the space for tab navigation is not expanded if there are actions that are marked with "ifRoom". Instead of moving the icons to the overflow menu, the tabs are truncated. The tabs loose the space against any icons.Instead you have to scroll within the tabs to view all tabs. 
 
 !/images/actionbar_tabs_cut.png!
 
-On Ice Cream Sandwich the are at least folded, but I'm not sure if the use of space optimal.
+On Ice Cream Sandwich the are at least folded, but I'm not sure if the use of space is perfect.
 
 !/images/actionbar_tabs_list.png!
  
 
 h2. Actions without main bar
 
-If you have tabs and disable the logo, icon and title, the tabs move to the top of the screen and stretch whole width.
-On a smartphone with Ice Cream Sandwich action icon are always moved to the next line.  
+If you have tabs and disable the logo, icon and title, the tabs move to the top of the screen and stretch to the whole width.
+On a smartphone with Ice Cream Sandwich and portrait modus action icon are always moved to the next line, even if there enough space to place a single icon in the same row.   
 
 !/images/actionbar_newrow.png! 
