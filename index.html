@@ -1,17 +1,51 @@
-<!DOCTYPE html>
-<html lang="en-US">
- 
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hybrid Check</title>
+    <title>GG TEST PAGE</title>
+
+    <script>
+        function askIsSoftwareTokenInstalled() {
+            // iOS
+            if (window.webkit != undefined) {
+                if (window.webkit.messageHandlers.georgeActions != undefined) {
+                    // On iOS, a message is posted to the native app
+                    // and the `isSoftwareTokenInstalled` callback is invoked by the native app
+                    window.webkit.messageHandlers.georgeActions.postMessage({ "action": "isSoftwareTokenInstalled" });
+                }
+            }
+        
+            // Android
+            if (window.georgeActions != undefined) {
+                // On Android, the native app can directly respond with a result
+                // and the `isSoftwareTokenInstalled` callback can be invoked directly.
+                var result = window.georgeActions.isSoftwareTokenInstalled();
+                isSoftwareTokenInstalled(result);
+            }
+        }
+
+        // This callback is called after calling `askIsSoftwareTokenInstalled()`
+        function isSoftwareTokenInstalled(installed) {
+            // use the installed boolean value...
+            alert("Software token installed: " + installed);
+        }
+    </script>
 </head>
- 
 <body>
-  <input type="file"
-       id="avatar" name="avatar"
-       accept="image/png, image/jpeg">
- 
+    
+<h1>HTML Test Page</h1>
+
+<b>Existing use-cases</b>
+<ul>
+    <li><a href="georgeapp://at/open_external_link?url=https%3A%2F%2Fexample.com%2Ftest%2F1%3Fkey%3Dvalue%26otherkey%3Dvalue">External Link</a></li>
+    <li><a href="tel:08001234567">Call 08001234567</a></li>
+    <li><a href="georgeapp://ro/softwaretoken_app?signId=12345&state=signing">Open eToken RO</a></li>
+</ul>
+
+<b>Future use-cases</b>
+<ul>
+    <li><a href="#" onclick="askIsSoftwareTokenInstalled();">SW Token installed?</a></li>
+    <li>Image upload: <input type="file" accept="image/*"></li>
+    <li>PDF upload: <input type="file" accept="application/pdf"></li>
+</ul>
+
 </body>
- 
 </html>
