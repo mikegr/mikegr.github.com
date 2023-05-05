@@ -1,9 +1,40 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>GG TEST PAGE</title>
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
 
+    <style type="text/css">
+        body{
+            Margin: 0;
+            padding: 0;
+            min-width: 100%;
+            background-color: #F3F3F3;
+        }
+        table{
+            border-spacing: 0;
+        }
+        td{
+            padding: 0;
+        }
+        @media (prefers-color-scheme: dark ) {
+
+            body {
+                color: white!important;;
+            }
+
+        }
+
+        @media (prefers-color-scheme: light ) {
+            body {
+                color: black !important;
+            }
+
+        }
+    </style>
+    
+    
     <script>
         function askIsSoftwareTokenInstalled() {
             // iOS
